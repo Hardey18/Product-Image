@@ -58,6 +58,39 @@ body {
     /* padding: 10px; */
 }
 
+@media(min-width: 800px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+.hamburger {
+    background: white;
+    height: 3px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.hamburger::before, .hamburger::after {
+    content: "";
+    background: white;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+}
+
+.hamburger::before {
+    top: 10px;
+    left: 0;
+    width: 100%;
+}
+
+.hamburger::after {
+    bottom: 10px;
+    left: 0;
+}
+
 .product-section {
     background: #FFFFFF;
     border-radius: 25px;
@@ -67,11 +100,12 @@ body {
     /* border: 1px solid black; */
 }
 
-/* @media(max-width: 800px) {
+@media(max-width: 800px) {
     .product-section {
-        margin-bottom: 0;
+        padding-left: 40px;
+        padding-right: 40px;
     }
-} */
+}
 
 .ps-container {
     display: flex;
@@ -91,6 +125,9 @@ body {
 
 @media(max-width: 800px) {
     .plogo {
+        display: none;
+    }
+    .container .product {
         display: none;
     }
     .product-image {
@@ -182,7 +219,7 @@ body {
 @media(max-width: 800px) {
     .about-us {
         display: block;
-        margin-top: 200px;
+        /* margin-top: 200px; */
     }   
 }
 
@@ -281,11 +318,12 @@ body {
     /* border: 1px solid black; */
     margin-left: 60px;
     margin-right: 60px;
+    /* box-sizing: border-box; */
 }
 
 @media(max-width: 800px) {
     .attend {
-        margin: 80px 0 0 0;
+        margin: 20px 0 0 0;
     }   
 }
 
@@ -305,6 +343,7 @@ body {
 @media(max-width: 800px) {
     .attending {
         font-size: 10px;
+        padding: 5px 0;
     }   
 }
 
@@ -314,7 +353,8 @@ body {
 }
 
 .attending2 {
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .last {
@@ -333,7 +373,8 @@ body {
 @media(max-width: 800px) {
     .factory {
         display: block;
-    }   
+        margin-top: 5px;
+    }
 }
 
 .factory div:first-child {
@@ -349,6 +390,20 @@ body {
     .factory div:last-child {
         width: 100%;
         padding-left: 0;
+    }
+}
+
+.attempt p {
+    line-height: 45px;
+}
+
+@media(max-width: 800px) {
+    .attempt {
+        margin-top: 50px;
+    }
+    .attempt p {
+        font-size: 14px;
+        line-height: 40px;
     }
 }
 
@@ -386,9 +441,18 @@ body {
     width: 16px;
 }
 
+.top-mini-sessions div:first-child {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
 @media(max-width: 800px) {
     .top-mini img{
         width: 8px;
+    }
+    .top-mini-sessions div:first-child {
+        /* font-weight: bolder; */
+        font-size: 10px;
     }
 }
 
@@ -403,6 +467,11 @@ body {
 @media(max-width: 800px) {
     .bottom-mini-sessions {
         padding: 20px 0 20px 20px;
+    }
+    .bottom-mini-sessions div:last-child {
+        font-size: 10px;
+        margin-left: 30px;
+        text-align: justify;
     }
 }
 
@@ -498,8 +567,21 @@ body {
     border-radius: 18px;
 }
 
+@media(max-width: 800px) {
+    .frequent{
+        font-size: 12px;
+    }
+
+    .frequent div img {
+        width: 10px;
+    }
+}
+
+
+
 .frequently {
     background: none;
+    margin-bottom: 200px;
 }
 
 .course-fee {
@@ -553,8 +635,12 @@ body {
 }
 
 @media(max-width: 800px) {
+    .second {
+        box-sizing: border-box;
+    }
     .course-fee .second {
         width: 100%;
+        /* padding: 0; */
     }
 }
 
@@ -590,6 +676,12 @@ body {
     height: 500px;
 }
 
+@media(max-width: 800px) {
+    .white-container {
+        display: none;
+    }
+}
+
 .black-container {
     padding: 100px 0;
     background: black;
@@ -608,6 +700,15 @@ body {
 
 .request-section .envelope {
     width: 50%;
+}
+
+@media(max-width: 800px) {
+    .request-section .envelope {
+        display: none;
+    }
+    .request-section .request {
+        width: 100%;
+    }
 }
 
 .request-section .envelope img:first-child {
@@ -650,9 +751,25 @@ body {
     margin-top: 80px;
 }
 
+@media(max-width: 800px) {
+    .design {
+        display: block;
+    }
+    .design .design2 {
+        display: none;
+    }
+}
+
 .design1 {
     width: 50%;
     padding-right: 80px;
+}
+
+@media(max-width: 800px) {
+    .design .design1 {
+        width: 90%;
+        /* background: black; */
+    }
 }
 
 .design1 h3 img{
@@ -705,6 +822,12 @@ body {
     margin-top: 80px;
     /* background: red; */
 }
+
+/* @media(max-width: 800px) {
+    .start {
+
+    }
+} */
 
 .start h3:last-child {
     width: 33.3%;
