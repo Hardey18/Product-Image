@@ -70,6 +70,7 @@ body {
     width: 30px;
     position: relative;
     cursor: pointer;
+    display: inline-block;
 }
 
 .hamburger::before, .hamburger::after {
@@ -89,6 +90,19 @@ body {
 .hamburger::after {
     bottom: 10px;
     left: 0;
+}
+
+.hamburger-cancel {
+    transform: rotate(45deg);
+}
+
+.hamburger-cancel::before {
+    top: 0;
+    transform: rotate(-90deg);
+}
+
+.hamburger-cancel::after {
+    opacity: 0;
 }
 
 .product-section {
