@@ -1157,9 +1157,14 @@ body {
     margin-left:auto; 
     position: relative;
 }
+    @media (min-width: 320px){
+        .container {
+            max-width: 90%; 
+        } 
+    }
     @media (min-width: 420px){
         .container {
-            max-width: 320px; 
+            max-width: 90%; 
         } 
     }
     @media (min-width: 576px){
